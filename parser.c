@@ -11,7 +11,7 @@ int lectura(ArrayList* lista)
     char string[50];
     eLetra* aux;
     int retorno = -1;
-    FILE* archivo = fopen("input.csv", "r");
+    FILE* archivo = fopen("datos.csv", "r");
     if(lista != NULL && archivo != NULL)
     {
         while(!feof(archivo))

@@ -7,7 +7,7 @@
 
 1532704554 c:\users\planta alta\desktop\nuevo\final_labi\arraylist.h
 
-1532920397 source:c:\users\planta alta\desktop\nuevo\final_labi\main.c
+1532921613 source:c:\users\planta alta\desktop\nuevo\final_labi\main.c
 	<stdio.h>
 	<stdlib.h>
 	<ctype.h>
@@ -15,20 +15,20 @@
 	"ArrayList.h"
 	"parser.h"
 
-1532920397 c:\users\planta alta\desktop\nuevo\final_labi\letra.h
+1532959072 c:\users\planta alta\desktop\nuevo\final_labi\letra.h
 	"ArrayList.h"
 
-1532920869 c:\users\planta alta\desktop\nuevo\final_labi\parser.h
+1532921613 c:\users\planta alta\desktop\nuevo\final_labi\parser.h
 	"ArrayList.h"
 
-1532920536 source:c:\users\planta alta\desktop\nuevo\final_labi\letra.c
+1532958666 source:c:\users\planta alta\desktop\nuevo\final_labi\letra.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	<ctype.h>
 	"letra.h"
 
-1532920870 source:c:\users\planta alta\desktop\nuevo\final_labi\parser.c
+1532958666 source:c:\users\planta alta\desktop\nuevo\final_labi\parser.c
 	<stdio.h>
 	<stdlib.h>
 	<ctype.h>

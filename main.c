@@ -8,8 +8,8 @@
 int main()
 {
     ArrayList* lista = al_newArrayList();
-    ArrayList* filtradaContiene = al_newArrayList();
-    ArrayList* filtradaNoContiene = al_newArrayList();
+    ArrayList* repetidos = al_newArrayList();
+    ArrayList* depurados = al_newArrayList();
     int opcion;
     char string[20];
 
@@ -42,20 +42,20 @@ int main()
                 fflush(stdin);
                 fgets(string, 20, stdin);
 
-                filtrarContiene(lista, filtradaContiene, string);
-                filtradaContiene->sort(filtradaContiene, comparar, 1);
-                imprimirTodos(filtradaContiene);
+                filtrarRepetidos(lista, repetidos, string);
+                repetidos->sort(repetidos, comparar, 1);
+                imprimirTodos(repetidos);
 
                 getchar();
 
-                filtrarNoContiene(lista, filtradaNoContiene, string);
-                filtradaNoContiene->sort(filtradaNoContiene, comparar, 0);
-                imprimirTodos(filtradaNoContiene);
+                filtrarDepurados(lista, depurados, string);
+                depurados->sort(depurados, comparar, 0);
+                imprimirTodos(depurados);
                 break;
             case 4:
-                escritura(lista, "completado.csv");
-                escritura(filtradaContiene, "contenidos.csv");
-                escritura(filtradaContiene, "no_contenidos.csv");
+                escritura(lista, "completo.csv");
+                escritura(repetidos, "repetidos.csv");
+                escritura(depurados, "depurados.csv");
                 break;
             case 5:
                 printf("Programa finalizado\n");

@@ -40,8 +40,8 @@ void completarConsonante(eLetra*);
 
 void completarLetra(ArrayList*);
 
-void filtrarContiene(ArrayList*, ArrayList*, char*);
+void filtrarRepetidos(ArrayList*, ArrayList*, char*);
 
-void filtrarNoContiene(ArrayList*, ArrayList*, char*);
+void filtrarDepurados(ArrayList*, ArrayList*, char*);
 
 int comparar(void* ,void*);

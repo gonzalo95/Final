@@ -174,7 +174,7 @@ void completarLetra(ArrayList* lista)
 
 }
 
-void filtrarContiene(ArrayList* original, ArrayList* filtrada, char* string)
+void filtrarRepetidos(ArrayList* original, ArrayList* filtrada, char* string)
 {
     ArrayList* guardadas = al_newArrayList();
     eLetra* aux;
@@ -197,8 +197,9 @@ void filtrarContiene(ArrayList* original, ArrayList* filtrada, char* string)
     }
 }
 
-void filtrarNoContiene(ArrayList* lista, ArrayList* filtrada, char* string)
+void filtrarDepurados(ArrayList* lista, ArrayList* filtrada, char* string)
 {
+    ArrayList* guardadas = al_newArrayList();
     int flag = 0;
     eLetra* aux;
     char letra;
@@ -215,9 +216,10 @@ void filtrarNoContiene(ArrayList* lista, ArrayList* filtrada, char* string)
                 break;
             }
         }
-        if(flag == 0)
+        if(flag == 0 && !guardadas->contains(guardadas, aux->letra))
         {
             filtrada->add(filtrada, aux);
+            guardadas->add(guardadas, aux->letra);
         }
         else
             flag = 0;
